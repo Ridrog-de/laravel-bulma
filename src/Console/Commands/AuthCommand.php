@@ -6,7 +6,7 @@ use Ridrog\Bulma\BulmaAuth;
 use Illuminate\Console\Command;
 
 
-class MakeBulmaAuthCommand extends Command
+class AuthCommand extends Command
 {
     /**
      * The name and signature of the console command.

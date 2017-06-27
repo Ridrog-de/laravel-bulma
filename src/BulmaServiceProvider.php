@@ -2,7 +2,7 @@
 
 namespace Ridrog\Bulma;
 
-use Ridrog\Bulma\Console\Commands\MakeBulmaAuthCommand;
+use Ridrog\Bulma\Console\Commands\AuthCommand;
 use Ridrog\Bulma\Console\Commands\PresetCommand;
 use Illuminate\Support\ServiceProvider;
 
@@ -56,7 +56,7 @@ class BulmaServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                MakeBulmaAuthCommand::class,
+                AuthCommand::class,
                 PresetCommand::class,
                 // more
             ]);
