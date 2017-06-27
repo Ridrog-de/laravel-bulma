@@ -4,5 +4,5 @@
 
  **Publish Config**
  ```
- php artisan vendor:publish --tag=boilerplate-config
+ php artisan vendor:publish --tag=bulma-config
  ```

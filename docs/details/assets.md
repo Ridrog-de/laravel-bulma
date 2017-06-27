@@ -4,5 +4,5 @@
 
 **Publish the assets**
 ```
-php artisan vendor:publish --tag=boilerplate-assets
+php artisan vendor:publish --tag=bulma-assets
 ```

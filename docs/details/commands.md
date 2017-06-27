@@ -2,9 +2,9 @@
 
 # Commands
 
-## boilerplate:command
+## bulma:command
 ```
-boilerplate:command
+bulma:command
 ```
 
 ### Arguments
@@ -24,7 +24,7 @@ boilerplate:command
    
 
 ```
-boilerplate:command argument1 argument2 argument3
+bulma:command argument1 argument2 argument3
 ```
 
 ### Options
@@ -35,5 +35,5 @@ boilerplate:command argument1 argument2 argument3
 ## Help
 
 ```
-php artisan help boilerplate:command
+php artisan help bulma:command
 ```

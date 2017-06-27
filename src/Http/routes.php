@@ -5,9 +5,9 @@ Route::get('testroute', function(){
 });
 
 Route::get('testtrans', function(){
-    return trans('boilerplate::example.message');
+    return trans('bulma::example.message');
 });
 
-Route::group(['middleware' => 'web', 'namespace' => 'Ridrog\Boilerplate\Http\Controllers'], function () {
-    Route::get('/controllertest', 'BoilerplateController@test')->name('test-controller');
+Route::group(['middleware' => 'web', 'namespace' => 'Ridrog\Bulma\Http\Controllers'], function () {
+    Route::get('/controllertest', 'BulmaController@test')->name('test-controller');
 });

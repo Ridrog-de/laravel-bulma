@@ -1,8 +1,8 @@
 <?php
 
-namespace Ridrog\Boilerplate\Test;
+namespace Ridrog\Bulma\Test;
 
-use Ridrog\Boilerplate\Test\TestCase as TestCase;
+use Ridrog\Bulma\Test\TestCase as TestCase;
 
 class RoutesTest extends TestCase
 {

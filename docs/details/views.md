@@ -4,5 +4,5 @@
 
  **Publish Views**
  ```
- php artisan vendor:publish --tag=boilerplate-views
+ php artisan vendor:publish --tag=bulma-views
  ```

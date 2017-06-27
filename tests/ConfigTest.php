@@ -1,9 +1,9 @@
 <?php
 
-namespace Ridrog\Boilerplate\Test;
+namespace Ridrog\Bulma\Test;
 
 use Illuminate\Support\Facades\Artisan;
-use Ridrog\Boilerplate\Test\TestCase as TestCase;
+use Ridrog\Bulma\Test\TestCase as TestCase;
 
 class ConfigTest extends TestCase
 {
@@ -11,7 +11,7 @@ class ConfigTest extends TestCase
     /** @test */
     public function the_config_exists()
     {
-        $path = __DIR__.'/../config/boilerplate.php';
+        $path = __DIR__.'/../config/bulma.php';
 
         $this->assertFileExists($path);
     }
@@ -19,9 +19,9 @@ class ConfigTest extends TestCase
     /** @test */
     public function publishing_config_works()
     {
-        Artisan::call( 'vendor:publish', ['--tag' => 'boilerplate-config']);
+        Artisan::call( 'vendor:publish', ['--tag' => 'bulma-config']);
 
-        $this->assertFileExists(config_path('boilerplate.php'));
+        $this->assertFileExists(config_path('bulma.php'));
     }
 
 }

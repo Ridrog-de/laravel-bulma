@@ -5,5 +5,5 @@
 
 **Publish Migrations**
 ```
-php artisan vendor:publish --tag=boilerplate-migrations
+php artisan vendor:publish --tag=bulma-migrations
 ```

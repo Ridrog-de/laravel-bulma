@@ -1,6 +1,6 @@
 {
-    "name": "ridrog/boilerplate",
-    "description": "Boilerplate for Laravel Packages",
+    "name": "ridrog/bulma",
+    "description": "Bulma for Laravel Packages",
     "type": "package",
     "keywords": ["laravel","package", "package development"],
     "homepage" : "https://github.com/:vendor/:package_name",
@@ -21,28 +21,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Ridrog\\Boilerplate\\": "src/"
-        },
-        "files": [
-            "src/helper.php"
-        ]
+            "Ridrog\\Bulma\\": "src/"
+        }
     },
 
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload-dev": {
         "psr-4": {
-            "Ridrog\\Boilerplate\\Test\\": "tests"
+            "Ridrog\\Bulma\\Test\\": "tests"
         }
     },
     "extra" : {
         "laravel" : {
             "providers" : [
-                "Ridrog\\Boilerplate\\BoilerplateServiceProvider"
-            ],
-            "aliases" : {
-                "Boilerplate" : "Ridrog\\Boilerplate\\Facades\\BoilerplateFacade"
-            }
+                "Ridrog\\Bulma\\BulmaServiceProvider"
+            ]
         }
     },
     "scripts": {

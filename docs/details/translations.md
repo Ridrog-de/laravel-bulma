@@ -4,5 +4,5 @@
  
  **Publish Translations**
  ```
- php artisan vendor:publish --tag=boilerplate-translations
+ php artisan vendor:publish --tag=bulma-translations
  ```
