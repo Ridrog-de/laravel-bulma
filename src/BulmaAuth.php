@@ -18,10 +18,7 @@ class BulmaAuth
 
         static::createDirectories();
         static::exportViews();
-        static::copyLogo();
-        static::copyController();
-        static::copyRoutes();
-        static::copyJS();
+        static::copyFiles();
         static::copyFonts();
 
     }
@@ -38,64 +35,23 @@ class BulmaAuth
 
     protected static function exportViews()
     {
-        foreach (self::views as $key => $value) {
+        foreach (self::views as $view) {
             copy(
-                __DIR__.'/../stubs/Views/'.$key,
-                base_path('resources/views/'.$value)
+                __DIR__.'/../stubs/Views/'.$view,
+                base_path('resources/views/'.$view)
             );
         }
     }
 
-    protected static function copyLogo()
+    protected static function copyFiles()
     {
-        copy(
-            __DIR__.'/../stubs/Assets/logo/bulma.png',
-            base_path('public/img/logo/bulma.png')
-        );
-    }
-
-    protected static function copyRoutes()
-    {
-        copy(
-            __DIR__.'/../stubs/Routes/web.php',
-            base_path('routes/web.php')
-        );
-    }
-
-    protected static function copyController()
-    {
-        copy(
-            __DIR__.'/../stubs/Controller/HomeController.php',
-            base_path('app/Http/Controllers/HomeController.php')
-        );
-
-        copy(
-            __DIR__.'/../stubs/Controller/WelcomeController.php',
-            base_path('app/Http/Controllers/WelcomeController.php')
-        );
-    }
-
-    protected static function copySass()
-    {
-        copy(
-            __DIR__.'/../stubs/Assets/sass/app.scss',
-            base_path('resources/assets/sass/app.scss')
-        );
-
-        copy(
-            __DIR__.'/../stubs/Assets/sass/_variables.scss',
-            base_path('resources/assets/sass/_variables.scss')
-        );
-
-    }
-
-    protected static function copyJS()
-    {
-        copy(
-            __DIR__.'/../stubs/Assets/js/bootstrap.js',
-            base_path('resources/assets/js/bootstrap.js')
-        );
-
+        foreach (self::files as $source => $destination)
+        {
+            copy(
+                __DIR__.'/../stubs/' . $source,
+                base_path($destination)
+            );
+        }
     }
 
     protected static function copyFonts(){
@@ -122,6 +78,14 @@ class BulmaAuth
         'routes',
     ];
 
+    const files = [
+        'Assets/logo/bulma.png' => 'public/img/logo/bulma.png',
+        'Routes/web.php' => 'routes/web.php',
+        'Controller/HomeController.php' => 'app/Http/Controllers/HomeController.php',
+        'Controller/WelcomeController.php' => 'app/Http/Controllers/WelcomeController.php',
+        'Assets/js/bootstrap.js' => 'resources/assets/js/bootstrap.js',
+    ];
+
     const fonts = [
         'FontAwesome.otf',
         'fontawesome-webfont.eot',
@@ -137,23 +101,22 @@ class BulmaAuth
      * @var array
      */
     const views = [
-        'layouts\app.blade.php' => 'layouts/app.blade.php',
-        'layouts\app\footer.blade.php' => 'layouts/app/footer.blade.php',
-        'layouts\app\navbar.blade.php' => 'layouts/app/navbar.blade.php',
+        'layouts/app.blade.php',
+        'layouts/app/footer.blade.php',
+        'layouts/app/navbar.blade.php',
 
-        'layouts\shared\csrf.blade.php' => 'layouts/shared/csrf.blade.php',
-        'layouts\shared\globalmeta.blade.php' => 'layouts/shared/globalmeta.blade.php',
+        'layouts/shared/csrf.blade.php',
+        'layouts/shared/globalmeta.blade.php',
 
-        'home.blade.php' => 'home.blade.php',
-        'welcome.blade.php' => 'welcome.blade.php',
+        'home.blade.php',
+        'welcome.blade.php',
 
-        'auth\login.blade.php' => 'auth/login.blade.php',
-        'auth\register.blade.php' => 'auth/register.blade.php',
-        'auth\passwords\email.blade.php' => 'auth/passwords\email.blade.php',
-        'auth\passwords\reset.blade.php' => 'auth/passwords\reset.blade.php',
+        'auth/login.blade.php',
+        'auth/register.blade.php',
+        'auth/passwords\email.blade.php',
+        'auth/passwords\reset.blade.php',
 
-        'pagination\default.blade.php' => 'vendor/pagination/default.blade.php',
-
+        'vendor/pagination/default.blade.php',
     ];
 
 }

@@ -34,7 +34,7 @@ class AuthCommand extends Command
         $this->info("---------------------------------------");
         $this->info("| Done");
         $this->info("| Next steps: ");
-        $this->info("| npm install --save-dev bulma font-awesome");
+        $this->info("| 'npm install' or 'yarn'");
         $this->info("| npm run dev");
         $this->info("---------------------------------------");
     }
