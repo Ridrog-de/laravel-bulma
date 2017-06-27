@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/ridrog/bulma/v/unstable)](https://packagist.org/packages/ridrog/bulma)
 [![License](https://poser.pugx.org/ridrog/bulma/license)](https://packagist.org/packages/ridrog/bulma)
 
- **[Full Documentation](https://ridrog-de.github.io/bulma/)**
+ **[Full Documentation](https://ridrog-de.github.io/laravel-bulma/)**
 
 ## What is this
 
