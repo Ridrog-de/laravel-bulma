@@ -80,12 +80,18 @@ class BulmaAuth
 
     const files = [
         'Assets/logo/bulma.png' => 'public/img/logo/bulma.png',
+        'Assets/js/bootstrap.js' => 'resources/assets/js/bootstrap.js',
         'Routes/web.php' => 'routes/web.php',
         'Controller/HomeController.php' => 'app/Http/Controllers/HomeController.php',
         'Controller/WelcomeController.php' => 'app/Http/Controllers/WelcomeController.php',
-        'Assets/js/bootstrap.js' => 'resources/assets/js/bootstrap.js',
+
     ];
 
+    /**
+     * All the needed files for font-awesome
+     *
+     * ToDO Remove it and install / copy them a better way
+     */
     const fonts = [
         'FontAwesome.otf',
         'fontawesome-webfont.eot',
