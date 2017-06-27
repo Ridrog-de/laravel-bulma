@@ -1,5 +1,5 @@
 {
-    "name": "ridrog/bulma",
+    "name": "ridrog/laravel-bulma",
     "description": "Bulma for Laravel Packages",
     "type": "package",
     "keywords": ["laravel","package", "package development"],
