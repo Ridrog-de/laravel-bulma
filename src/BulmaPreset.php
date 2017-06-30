@@ -45,7 +45,7 @@ class BulmaPreset
     protected static function updateSass()
     {
         copy(__DIR__.'/../stubs/Assets/sass/_variables.scss', resource_path('assets/sass/_variables.scss'));
-        // copy(__DIR__.'/../stubs/Assets/sass/app.scss', resource_path('assets/sass/app.scss'));
+        copy(__DIR__.'/../stubs/Assets/sass/app.scss', resource_path('assets/sass/app.scss'));
     }
 
     protected static function updatePackages()
