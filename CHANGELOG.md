@@ -20,12 +20,18 @@ for any bug fixes.
 ### Security 
 in case of vulnerabilities.
 
-## dev-master - 2017-04-13
+## dev-master - 2017-06-30
 - start
 
-## 0.0.1 - 2017-06-22
+## 0.0.1 - 2017-06-30
 
 ### Added
+**Commands**
+- bulma:preset 
+- bulma:auth
+
+**Misc**
 - Package auto discovery for Laravel 5.5
+
 
 
