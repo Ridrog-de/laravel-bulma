@@ -26,8 +26,6 @@ class BulmaServiceProvider extends ServiceProvider
 
         $this->publishConfig();
 
-        $this->loadRoutes();
-
         $this->views();
     }
 
