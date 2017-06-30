@@ -5,7 +5,7 @@
 ## Require it
 
 ```
-composer require ridrog/bulma
+composer require ridrog/laravel-bulma
 ```
 
 ## Include Service Provider 
