@@ -15,10 +15,40 @@
 -----------------------------------------------
 ## Installation
 
+```
+composer require ridrog/bulma-auth
+```
 
+#### Laravel 5.5
+nothing more to do, thanks to package auto discovery
+
+#### \> Laravel 5.5
+
+add the Service Provider to app/config.php
+```
+Ridrog\Bulma\BulmaServiceProvider::class,
+```
 
 -----------------------------------------------
 ## Usage
+
+#### Command: bulma:preset
+
+Adds bulma and font-awesome to the package.json file.  
+It also overrides app.scss and _variables.scss with bulma specific versions.
+
+```
+php artisan bulma:preset
+```
+
+#### Command: bulma:auth
+
+1. It calls bulma:preset
+2. Create all views and Controller, just like make:auth
+
+```
+php artisan bulma:auth
+```
 
 -----------------------------------------------
 ## Config
@@ -26,35 +56,30 @@
 -----------------------------------------------
 ## Details
 
-### Facade
-
-
-### Routes
-
-
-### Controllers
-
+### Commands
+1. bulma:preset
+2. bulma:auth
+3. bulma:view NameOfTheView
+4. bulma:example NameOfTheExample
 
 ### Views
 
+- Login
+- Register
+- Password/Email
+- Password/Rest
+- Home
+- Welcome
 
-### Middleware
+### Partials
+
+- Pagination
+
+### Components
 
 
-### Migrations
 
 
-### Seeder
-
-
-### Commands
-
-
-### Translation
-
-### Events and Listeners
-
-### Notifications
 
 -----------------------------------------------
 ## Tests

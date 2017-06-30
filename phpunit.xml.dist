@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Package Test Suite">
+        <testsuite name="Laravel Bulma Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

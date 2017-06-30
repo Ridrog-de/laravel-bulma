@@ -40,7 +40,7 @@ class ServiceProviderTest extends TestCase
     public function it_can_be_instantiated()
     {
         $expectations = [
-             \Illuminate\Support\ServiceProvider::class,
+             ServiceProvider::class,
              BulmaServiceProvider::class
         ];
 

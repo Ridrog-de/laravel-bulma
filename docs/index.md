@@ -7,18 +7,9 @@
 
 
 ## Details
-- [Facades](/details/facades.md)
-- [Routes](/details/routes.md)
-- [Controllers](/details/controllers.md)
 - [Views](/details/views.md)
-- [Middleware](/details/middleware.md)
-- [Migrations](/details/migrations.md)
-- [Seeder](/details/seeder.md)
 - [Commands](/details/commands.md)
-- [Translation](/details/translations.md)
-- [Events](/details/events.md)
-- [Notifications](/details/notifications.md)
-- [Assets](/details/assets.md)
+- [Config](/details/config.md)
 
 
 

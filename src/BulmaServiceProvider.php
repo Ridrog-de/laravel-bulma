@@ -38,10 +38,6 @@ class BulmaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        /*
-         * This method only merges the first level of the configuration array.
-         * If your users partially define a multi-dimensional configuration array, the missing options will not be merged.
-         */
         $this->mergeConfigFrom(
             __DIR__.'/../config/bulma.php', $this->packageName
         );
@@ -74,14 +70,6 @@ class BulmaServiceProvider extends ServiceProvider
     }
 
     /**
-     * Load Routes
-     */
-    public function loadRoutes()
-    {
-        $this->loadRoutesFrom(__DIR__.'/Http/routes.php');
-    }
-
-    /**
      * Load and publish Routes
      */
     public function views()
@@ -91,18 +79,6 @@ class BulmaServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/Views' => resource_path('views/vendor/'.$this->packageName),
         ], $this->packageName.'-views');
-    }
-
-    /**
-     * Load and Publish Translations
-     */
-    public function translations()
-    {
-        $this->loadTranslationsFrom(__DIR__.'/Resources/Lang', $this->packageName);
-
-        $this->publishes([
-            __DIR__.'/path/to/translations' => resource_path('lang/vendor/courier'),
-        ], $this->packageName.'-translations');
     }
 
 }

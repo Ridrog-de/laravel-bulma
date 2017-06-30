@@ -1,9 +1,9 @@
 {
     "name": "ridrog/laravel-bulma",
-    "description": "Bulma for Laravel Packages",
+    "description": "Bulma for Laravel",
     "type": "package",
-    "keywords": ["laravel","package", "package development"],
-    "homepage" : "https://github.com/:vendor/:package_name",
+    "keywords": ["laravel","package", "bulma.io"],
+    "homepage" : "https://github.com/ridrog-de/laravel-bulma",
     "license": "MIT",
     "authors": [
         {
